@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+
+<head> 
+    <title> Studenti </title>
+</head>
+{% block content %}
+
+    {% for student in object_list %}
+        <div>
+            <h3>Ime i prezime: {{student.ime}} {{student.prezime}}</h3>
+            <p>Email: {{student.email}} </p>
+            <p>Adresa: {{student.adresa}}</p>
+            <p>Grad: {{student.grad}}</p>
+            <p>Redovan student: {{student.redovan_student}}</p>
+            <p>Broj ostvarenih ECTS-a: {{student.broj_ostvarenih_ectsa}}</p>
+            <p>Semestar: {{student.semestar_studija}}</p> 
+            <br>
+        </div>
+    {% endfor %}
+
+{% endblock %}
