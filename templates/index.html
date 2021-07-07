@@ -1,10 +1,22 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Upis koelgija</title>
+    <title>Upis kolegija</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
 </head>
 
 <body>
+
+    <nav>
+        <ul>
+            <li><a href = "/main">Pocetna</a></li>
+            <li><a href = "/main/studenti">Popis studenata</a></li>
+            <li><a href = "/main/profesori">Popis profesora</a></li>
+            <li><a href = "/main/predmeti">Popis predemeta</a></li>
+        </ul>
+    </nav>
+
     {% block content %}
     {% endblock %}
 </body>

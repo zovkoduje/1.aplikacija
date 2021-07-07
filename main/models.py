@@ -26,6 +26,7 @@ class Student(models.Model):
     grad = models.CharField(max_length=30)
     redovan_student = models.BooleanField(default=True)
     broj_ostvarenih_ectsa = models.IntegerField(null = True)
+    #semestar studija trebat ce se automatski izracunavat temeljem broja ostvarenih ects bodova
     semestar_studija = models.IntegerField(null = True)
 
     #predmet = models.ForeignKey(Predmet, on_delete=models.CASCADE)

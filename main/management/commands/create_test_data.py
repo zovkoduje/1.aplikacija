@@ -3,7 +3,8 @@ from django.core.management.base import BaseCommand
 from main.models import *
 from main.factory import *
 
-NUM_STUDENTS = 20
+NUM_STUDENTS = 140
+NUM_PROFESORS = 10
 
 class Command(BaseCommand):
     help = "Stvaranje testnih podataka"
@@ -20,3 +21,6 @@ class Command(BaseCommand):
 
         for _ in range(NUM_STUDENTS):
             student = StudentFactory()
+        
+        for _ in range(NUM_PROFESORS):
+            profesor = ProfesorFactory()

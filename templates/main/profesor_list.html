@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    {% for student in object_list %}
+        <div>
+            <h3>Ime i prezime: {{student.ime}} {{student.prezime}}</h3>
+            <p>Email: {{student.email}} </p> 
+            <br>
+        </div>
+    {% endfor %}
+
+{% endblock %}
