@@ -1,0 +1,16 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+    {% for predmet in predmet_list %}
+        <div>
+            <h3>Naziv predmeta: {{predmet.naziv_predmeta}}</h3>
+            <p>Broj ECTS-a {{predmet.broj_ectsa}} </p> 
+            <p>Semestar predmet {{predmet.semestar_predmeta}} </p> 
+            <p>Obavezan predmet: {{predmet.obavezan_predmet}} </p> 
+            <p>Nositelj predmeta: {{predmet.nositelj}} </p> 
+            <br>
+        </div>
+    {% endfor %}
+
+{% endblock %}

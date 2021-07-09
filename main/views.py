@@ -4,6 +4,10 @@ from main.models import *
 from django.views.generic import ListView
 from rest_framework import viewsets
 from main.serializers import *
+from django.shortcuts import  render, redirect
+from .forms import NewUserForm
+from django.contrib.auth import login
+from django.contrib import messages
 
 # Create your views here.
 
@@ -27,3 +31,7 @@ class ProfesorViewSet(viewsets.ModelViewSet):
 class PredmetViewSet(viewsets.ModelViewSet):
     queryset = Predmet.objects.all().order_by('naziv_predmeta')
     serializer_class = PredmetSerializer
+
+class PredmetList(ListView):
+    model=Predmet
+
