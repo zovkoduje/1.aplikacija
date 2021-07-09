@@ -1,0 +1,189 @@
+[
+{
+    "model": "main.predmet",
+    "pk": 2,
+    "fields": {
+        "naziv_predmeta": "Operacijska istrazivanja",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 4,
+        "obavezan_predmet": true,
+        "nositelj": 72
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 3,
+    "fields": {
+        "naziv_predmeta": "Uvod u programiranje za web",
+        "broj_ectsa": 4,
+        "semestar_predmeta": 4,
+        "obavezan_predmet": true,
+        "nositelj": 74
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 4,
+    "fields": {
+        "naziv_predmeta": "Algoritmi i strukture podataka",
+        "broj_ectsa": 6,
+        "semestar_predmeta": 4,
+        "obavezan_predmet": true,
+        "nositelj": 73
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 5,
+    "fields": {
+        "naziv_predmeta": "Upravljanje projektima",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 4,
+        "obavezan_predmet": true,
+        "nositelj": 75
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 6,
+    "fields": {
+        "naziv_predmeta": "Razvoj informacijskih sustava",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 4,
+        "obavezan_predmet": true,
+        "nositelj": 76
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 7,
+    "fields": {
+        "naziv_predmeta": "Sigurnost sustava",
+        "broj_ectsa": 6,
+        "semestar_predmeta": 4,
+        "obavezan_predmet": true,
+        "nositelj": 77
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 8,
+    "fields": {
+        "naziv_predmeta": "Diskretna matematika",
+        "broj_ectsa": 4,
+        "semestar_predmeta": 4,
+        "obavezan_predmet": true,
+        "nositelj": 78
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 9,
+    "fields": {
+        "naziv_predmeta": "Matematika 3",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 3,
+        "obavezan_predmet": true,
+        "nositelj": 79
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 10,
+    "fields": {
+        "naziv_predmeta": "Objektno programiranje",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 3,
+        "obavezan_predmet": true,
+        "nositelj": 80
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 11,
+    "fields": {
+        "naziv_predmeta": "Računalne mreže",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 3,
+        "obavezan_predmet": false,
+        "nositelj": 81
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 12,
+    "fields": {
+        "naziv_predmeta": "Baze podataka",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 3,
+        "obavezan_predmet": true,
+        "nositelj": 89
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 13,
+    "fields": {
+        "naziv_predmeta": "Uvod u programsko inžinjerstvo",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 3,
+        "obavezan_predmet": true,
+        "nositelj": 86
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 14,
+    "fields": {
+        "naziv_predmeta": "Dinamičke web aplikacije 1",
+        "broj_ectsa": 4,
+        "semestar_predmeta": 5,
+        "obavezan_predmet": true,
+        "nositelj": 90
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 15,
+    "fields": {
+        "naziv_predmeta": "Formalni jezici 1",
+        "broj_ectsa": 6,
+        "semestar_predmeta": 5,
+        "obavezan_predmet": true,
+        "nositelj": 91
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 16,
+    "fields": {
+        "naziv_predmeta": "Modeliranje Procesa",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 5,
+        "obavezan_predmet": true,
+        "nositelj": 87
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 17,
+    "fields": {
+        "naziv_predmeta": "Numerička matematika",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 5,
+        "obavezan_predmet": true,
+        "nositelj": 83
+    }
+},
+{
+    "model": "main.predmet",
+    "pk": 18,
+    "fields": {
+        "naziv_predmeta": "OOP",
+        "broj_ectsa": 5,
+        "semestar_predmeta": 5,
+        "obavezan_predmet": true,
+        "nositelj": 82
+    }
+}
+]

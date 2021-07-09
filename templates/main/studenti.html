@@ -1,0 +1,15 @@
+{% extends "index.html" %}
+
+{% block content %}
+<form>
+
+    {% for predmet in lista_predmeta %}
+
+        <input type="checkbox" id="vehicle{{predmet.naziv_predmeta}}" name="vehicle{{predmet.naziv_predmeta}" value="{{naziv_predmeta}">
+        <label for="vehicle{{predmet.naziv_predmeta}}"> {{predmet.naziv_predmeta}}</label><br>
+
+    {% endfor %}
+    <br>
+    <input type="submit" value="Submit"/>
+  </form>
+{% endblock %}

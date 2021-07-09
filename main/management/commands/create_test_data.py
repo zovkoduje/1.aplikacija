@@ -12,7 +12,7 @@ class Command(BaseCommand):
     @transaction.atomic
     def handle(self, *args, **kwargs):
         self.stdout.write("Brisanje starih podataka")
-        models = [Student,Profesor]
+        models = [Student]
 
         for m in models:
             m.objects.all().delete()

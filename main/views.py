@@ -14,6 +14,14 @@ from django.contrib import messages
 def homepage(request):
     return render(request , 'index.html')
 
+def odabir_predmeta(request):
+
+    lista_predmeta = Predmet.objects.all()
+
+    context = {'lista_predmeta' : lista_predmeta}
+
+    return render(request, 'main/studenti.html' , context = context)
+
 class StudentList(ListView):
     model = Student
 
