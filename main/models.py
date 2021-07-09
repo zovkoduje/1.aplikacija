@@ -34,7 +34,7 @@ class Student(models.Model):
     #semestar studija trebat ce se automatski izracunavat temeljem broja ostvarenih ects bodova
     semestar_studija = models.IntegerField(null = True, default=5)
     predmet= models.ManyToManyField(Predmet)
-    broj_xice=models.CharField(max_length=10, default=1)
+    broj_xice=models.CharField(max_length=10)
 
     def __str__(self):
         return self.broj_xice

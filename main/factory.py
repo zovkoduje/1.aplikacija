@@ -15,6 +15,7 @@ class StudentFactory(DjangoModelFactory):
     grad = factory.Faker("city")
     redovan_student =factory.Faker("boolean",chance_of_getting_true=80)
     broj_ostvarenih_ectsa = factory.Faker("pyint",min_value=91,max_value=120)
+    broj_xice=factory.Faker("pyint", min_value=1000000000, max_value=9999999999)
     # semestar se treba automatski izracunati temeljem broja ostvarenih ectsa
     #semestar_studija = random.randrange(1,6)
 
