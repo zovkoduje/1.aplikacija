@@ -1,0 +1,26 @@
+<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+
+</head>
+<body>
+    <h1>Registration</h1>
+    <form method="post" action="{% url 'registration' %}">
+            {% csrf_token %}
+        
+            {% if form.errors %}
+                <h3>Greska.</h3>
+            {% endif %}
+        
+            {{ form }}
+        
+            <input type="submit" value="Register" />
+
+    </form>
+</body>
+
+
+
+</html>

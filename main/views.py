@@ -8,6 +8,9 @@ from django.shortcuts import  render, redirect
 from .forms import NewUserForm
 from django.contrib.auth import login
 from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth import authenticate, login
+
 
 # Create your views here.
 
@@ -20,7 +23,7 @@ def odabir_predmeta(request):
 
     context = {'lista_predmeta' : lista_predmeta}
 
-    return render(request, 'main/studenti.html' , context = context)
+    return render(request, 'main/odabir_predmeta.html' , context = context)
 
 class StudentList(ListView):
     model = Student
@@ -43,3 +46,22 @@ class PredmetViewSet(viewsets.ModelViewSet):
 class PredmetList(ListView):
     model=Predmet
 
+def registration(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+
+        if form.is_valid():
+            form.save()
+            username = form.cleaned_data['username']
+            password = form.cleaned_data['password1']
+
+            user = authenticate(username=username, password=password)
+            login(request, user)
+            return redirect('index')
+
+    else:
+        form = UserCreationForm()
+
+    context = {'form': form}
+
+    return render(request, 'registration/register.html', context)

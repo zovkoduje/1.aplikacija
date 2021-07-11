@@ -2,9 +2,10 @@ from django.db import transaction
 from django.core.management.base import BaseCommand
 from main.models import *
 from main.factory import *
+from django.contrib.auth.models import User
 
 NUM_STUDENTS = 140
-NUM_PROFESORS = 10
+NUM_PROFESORS = 20
 
 class Command(BaseCommand):
     help = "Stvaranje testnih podataka"

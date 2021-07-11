@@ -14,5 +14,6 @@ urlpatterns = [
     path("profesori" , ProfesorList.as_view()),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
     path("predmeti", views.PredmetList.as_view()),
-    path("odabir_predmeta" , views.odabir_predmeta)
+    path("odabir_predmeta" , views.odabir_predmeta),
+    path("registration/", views.registration, name="registration")
 ]
