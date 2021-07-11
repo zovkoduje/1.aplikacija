@@ -11,6 +11,7 @@
             <p>Redovan student: {{student.redovan_student}}</p>
             <p>Broj ostvarenih ECTS-a: {{student.broj_ostvarenih_ectsa}}</p>
             <p>Semestar: {{student.semestar_studija}}</p> 
+            <a href = "{% url 'update_student' student.ime %}"> Odabir predmeta </a>
             <br>
         </div>
     {% endfor %}

@@ -10,10 +10,11 @@ router.register(r'profesori', ProfesorViewSet)
 
 urlpatterns = [
     path("" , homepage, name = "homepage"),
-    path("studenti" , StudentList.as_view()),
-    path("profesori" , ProfesorList.as_view()),
+    path("studenti/" , StudentList.as_view()),
+    path("profesori/" , ProfesorList.as_view()),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    path("predmeti", views.PredmetList.as_view()),
-    path("odabir_predmeta" , views.odabir_predmeta),
-    path("registration/", views.registration, name="registration")
+    path("predmeti/", views.PredmetList.as_view()),
+    path("odabir_predmeta/" , views.odabir_predmeta),
+    path("registration/", views.registration, name="registration"),
+    path("update_student/<str:ime>/" , update_student , name = "update_student")
 ]

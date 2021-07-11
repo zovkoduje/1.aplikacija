@@ -5,7 +5,7 @@ from django.views.generic import ListView
 from rest_framework import viewsets
 from main.serializers import *
 from django.shortcuts import  render, redirect
-from .forms import NewUserForm
+from .forms import *
 from django.contrib.auth import login
 from django.contrib import messages
 from django.contrib.auth.forms import UserCreationForm
@@ -13,6 +13,20 @@ from django.contrib.auth import authenticate, login
 
 
 # Create your views here.
+
+def update_student(request , ime):
+
+    student = Student.objects.get(ime = ime)
+    form = StudentForm(instance = student)
+
+    if request.method == "POST":
+        form = StudentForm(request.POST, instance = student)
+        if form.is_valid():
+            form.save()
+            return redirect("/")
+
+    context = {'form' : form}
+    return render(request, 'main/update_student.html' ,context)
 
 def homepage(request):
     return render(request , 'index.html')
