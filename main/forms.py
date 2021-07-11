@@ -18,3 +18,14 @@ class NewUserForm(UserCreationForm):
 		if commit:
 			user.save()
 		return user
+
+"""
+class Homeform(forms.ModelForm):
+	post=forms.CharField()
+
+	class Meta:
+		model=Student
+
+	polozeni_predmeti=forms.checkboxinput
+	predmeti=forms.checkboxinput
+"""
